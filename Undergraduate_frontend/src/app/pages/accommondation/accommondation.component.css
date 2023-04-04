@@ -1,0 +1,16 @@
+body{
+    background-color: #FF6347;
+}
+h2{
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+}
+.col-3{
+    text-align: center;
+    margin: 2%;
+    margin-bottom: 5%;
+}
+#card-1{
+    margin-left: 9%;
+}

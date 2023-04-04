@@ -1,0 +1,16 @@
+nav{
+    color: black;
+    background-color: white;
+    text-transform: capitalize;
+}
+h2 {
+    margin-left: 5%;
+    margin-right:40%;
+    color: #FF6347;
+}
+.nav-item .nav-link{
+    color:black ;
+}
+.nav-item .nav-link:hover{
+    color:#FF6347 ;
+}
