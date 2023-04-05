@@ -1,5 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ApiUrlService } from 'src/app/services/apiservice.service';
+
+interface Contact {
+  Id : number,
+  Firstname : string,
+  Lastname : string,
+  Email: string ,
+  Phone : string ,
+  Message : string 
+}
 
 @Component({
   selector: 'app-contact',
@@ -7,15 +17,15 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent{
-  myData : any;
-  readonly apiUrl = "https://localhost:44334/api/"
-  
-  constructor(private http: HttpClient) {}
+  contacts : Contact[] | undefined;
+  constructor(private http: HttpClient, private apiUrlService : ApiUrlService) {}
 
   ngOnInit() : void{
-    this.http.get(this.apiUrl+'Contact').subscribe(
-      (data : any) => this.myData = data
+    this.http.get(this.apiUrlService.getUrl() +'Contact').subscribe(
+      (data : any) => {
+        this.contacts = data
+        console.log(this.contacts)
+      }
     )
   };
-
 }

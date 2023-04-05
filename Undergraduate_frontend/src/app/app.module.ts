@@ -12,7 +12,7 @@ import { SightseeingComponent } from './pages/sightseeing/sightseeing.component'
 import { TransportationComponent } from './pages/transportation/transportation.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
-import { ApiserviceService } from './services/apiservice.service';
+import { ApiUrlService } from './services/apiservice.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -33,7 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [
-    ApiserviceService
+    ApiUrlService
   ],
   bootstrap: [AppComponent]
 })
