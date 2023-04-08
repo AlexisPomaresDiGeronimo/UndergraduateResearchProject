@@ -1,0 +1,13 @@
+body{
+    background-color: #24527a;
+    padding-bottom: 5%;
+}
+h2{
+    margin: 2%;
+    text-align: center;
+    color: white;
+}
+#row{
+    background-color:  #e0ebeb;
+    border-radius: 5px;
+}

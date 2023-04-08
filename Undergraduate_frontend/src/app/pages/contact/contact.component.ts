@@ -17,15 +17,23 @@ interface Contact {
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent{
-  contacts : Contact[] | undefined;
   constructor(private http: HttpClient, private apiUrlService : ApiUrlService) {}
-
-  ngOnInit() : void{
-    this.http.get(this.apiUrlService.getUrl() +'Contact').subscribe(
-      (data : any) => {
+  contacts : Contact[] | any;
+  ngOnInit(): void{
+    this.http.get(this.apiUrlService.getUrl() + 'Contact').subscribe(
+      (data : any)=>{
         this.contacts = data
         console.log(this.contacts)
       }
     )
   };
-}
+
+  public saveContact(contact: Contact) {
+    console.log(contact);
+    this.http.post<Contact>(this.apiUrlService.getUrl() + 'Contact', contact).subscribe(
+        (data: Contact) => {
+          console.log('Contact saved:', data);
+        }     
+      );
+  }
+};

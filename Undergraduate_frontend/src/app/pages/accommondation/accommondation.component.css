@@ -1,5 +1,5 @@
 body{
-    background-color: #FF6347;
+    background-color: #24527a;
 }
 h2{
     margin: 2%;
@@ -7,8 +7,8 @@ h2{
     color: white;
 }
 .col-4{
-    background-color: black;
-    border: 1px solid #b2ff47;
+    /* background-color: black; */
+    /* border: 1px solid #b2ff47; */
     justify-content: center;
     margin-bottom: 10%;    
 }

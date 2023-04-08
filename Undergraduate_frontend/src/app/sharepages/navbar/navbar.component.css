@@ -6,11 +6,12 @@ nav{
 h2 {
     margin-left: 5%;
     margin-right:40%;
-    color: #FF6347;
+    color: #24527a;
 }
 .nav-item .nav-link{
     color:black ;
 }
 .nav-item .nav-link:hover{
-    color:#FF6347 ;
+    color:#24527a ;
 }
+/* #e0ebeb : gray */

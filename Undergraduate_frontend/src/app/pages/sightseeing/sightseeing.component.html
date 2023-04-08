@@ -1,1 +1,21 @@
-<p>sightseeing works!</p>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Sightseeing</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4" *ngFor="let sightseeing of sightseeings">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ sightseeing.Name }}</h5>
+                      <p class="card-text">{{ sightseeing.Description }}</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div> 
+    </body>

@@ -1,4 +1,33 @@
-<div *ngFor="let id of contacts">
-<h3>{{ id.Id }}</h3>
-<h3>{{ id.Firstname}}</h3>
-</div>
+<body>
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <h2>Contact</h2>
+          </div>
+      </div>
+      <div class="row" id="row">
+        <div class="col-6">
+          <table>
+            <tbody  *ngFor="let contact of contacts">
+              <td>
+                {{contact.Firstname + ' ' + contact.Lastname}}
+              </td>
+              <td>
+                {{contact.Message}}
+              </td>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-6">
+          <form #contactForm="ngForm" (ngSubmit)="saveContact(contactForm.value)" method="POST">
+            <input type="text" ngModel name="Firstname" placeholder="firstname">
+            <input type="text" ngModel name="Lastname" placeholder="lastname"><br>
+            <input type="email" ngModel name="Email" placeholder="email">
+            <input type="text" ngModel name="Phone" placeholder="phone"><br>
+            <input type="text-area" ngModel name="Message" placeholder="message"><br>
+            <button>Send</button>
+          </form>
+        </div>
+      </div>
+  </div> 
+</body>
