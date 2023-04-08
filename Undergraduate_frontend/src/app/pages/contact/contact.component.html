@@ -7,24 +7,30 @@
       </div>
       <div class="row" id="row">
         <div class="col-6">
-          <table>
-            <tbody  *ngFor="let contact of contacts">
-              <td>
-                {{contact.Firstname + ' ' + contact.Lastname}}
-              </td>
-              <td>
-                {{contact.Message}}
-              </td>
-            </tbody>
-          </table>
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+            <table>
+              <tbody *ngFor="let contact of contacts">
+                <tr>
+                  <td id="user">
+                    {{contact.Firstname + ' ' + contact.Lastname}}
+                  </td>
+                </tr>
+                <tr>
+                  <td id="msg">
+                    {{contact.Message}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div class="col-6">
           <form #contactForm="ngForm" (ngSubmit)="saveContact(contactForm.value)" method="POST">
-            <input type="text" ngModel name="Firstname" placeholder="firstname">
-            <input type="text" ngModel name="Lastname" placeholder="lastname"><br>
-            <input type="email" ngModel name="Email" placeholder="email">
-            <input type="text" ngModel name="Phone" placeholder="phone"><br>
-            <input type="text-area" ngModel name="Message" placeholder="message"><br>
+            <input type="text" ngModel name="Firstname" placeholder="Firstname">
+            <input type="text" ngModel name="Lastname" placeholder="Lastname"><br>
+            <input type="email" ngModel name="Email" placeholder="Email">
+            <input type="text" ngModel name="Phone" placeholder="Phone"><br>
+            <textarea type="text" ngModel name="Message" placeholder="Message"></textarea><br>
             <button>Send</button>
           </form>
         </div>
