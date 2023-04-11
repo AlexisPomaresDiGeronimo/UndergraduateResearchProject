@@ -20,7 +20,9 @@ export class ContactComponent{
   constructor(private http: HttpClient, private apiUrlService : ApiUrlService) {}
   contacts : Contact[] | any;
   ngOnInit(): void{
-    this.http.get(this.apiUrlService.getUrl() + 'Contact').subscribe(
+    let url = this.apiUrlService.getUrl() + 'Contact'
+    console.log(url)
+    this.http.get(url).subscribe(
       (data : any)=>{
         this.contacts = data
         console.log(this.contacts)
