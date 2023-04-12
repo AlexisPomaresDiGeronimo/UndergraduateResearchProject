@@ -6,22 +6,12 @@
           </div>
       </div>
       <div class="row" id="row">
-        <div class="col-6">
-          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
-            <table>
-              <tbody *ngFor="let contact of contacts">
-                <tr>
-                  <td id="user">
-                    {{contact.Firstname + ' ' + contact.Lastname}}
-                  </td>
-                </tr>
-                <tr>
-                  <td id="msg">
-                    {{contact.Message}}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="col-6" id="tbl">
+          <div class="media text-muted pt-3" *ngFor="let contact of contacts">
+            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+              <strong class="d-block text-gray-dark">{{contact.Firstname + ' ' + contact.Lastname}}</strong>
+              {{contact.Message}}
+            </p>
           </div>
         </div>
         <div class="col-6">

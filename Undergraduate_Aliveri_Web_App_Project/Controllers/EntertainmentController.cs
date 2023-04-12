@@ -9,9 +9,11 @@ using System.Web.Http.Description;
 using Undergraduate_Aliveri_Web_App_Project.Models.Dtos;
 using Undergraduate_Aliveri_Web_App_Project.Models;
 using Undergraduate_Aliveri_Web_App_Project.Persistance;
+using System.Web.Http.Cors;
 
 namespace Undergraduate_Aliveri_Web_App_Project.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class EntertainmentController : ApiController
     {
         private UnitOfWork unit;

@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Undergraduate_Aliveri_Web_App_Project.Models.Dtos;
 using Undergraduate_Aliveri_Web_App_Project.Models;
 using Undergraduate_Aliveri_Web_App_Project.Persistance;
+using System.Web.Http.Cors;
 
 namespace Undergraduate_Aliveri_Web_App_Project.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class SightseeingController : ApiController
     {
         private UnitOfWork unit;
