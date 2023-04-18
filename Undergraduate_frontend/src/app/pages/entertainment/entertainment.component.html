@@ -2,18 +2,18 @@
     <div class="container">
         <h2>Entertainment</h2>
         <div class="row">
-            <div class="col-3 d-flex justify-content-center"  *ngFor="let entertainment of entertainments">
+            <div class="col-3 d-flex justify-content-center" *ngFor="let entertainment of entertainments">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ entertainment.Title }}</h5>
-                        <p class="card-text">{{entertainment.Type}}</p>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            More..
+                        <button type="button" data-bs-toggle="modal" [attr.data-bs-target]="'#mdl' + entertainment.Id">
+                          <img src="..." class="card-img-top" alt="...">
+                          <hr>
+                          <div class="card-body">
+                              <h5 class="card-title">{{ entertainment.Title }}</h5>
+                              <p class="card-text">{{entertainment.Type}}</p>
+                            </div>
                           </button>
                           <!-- Modal -->
-                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal fade" [id]="'mdl'+entertainment.Id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog">
                               <div class="modal-content">
                                 <div class="modal-header">
@@ -33,5 +33,4 @@
                 </div>
             </div>
         </div>
-    </div> 
     </body>
