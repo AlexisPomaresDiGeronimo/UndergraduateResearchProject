@@ -2,17 +2,22 @@ body{
     background-color: #24527a;
 }
 h2{
-    margin: 2%;
+    padding: 3%;
     text-align: center;
     color: white;
 }
-.col-4{
+.col-3{
     /* background-color: black; */
     /* border: 1px solid #b2ff47; */
-    justify-content: center;
-    margin-bottom: 10%;    
+    margin-bottom: 5%;    
 }
 .card{
-    margin-left: 10%;
+    justify-content: center;
     height: 100%;
+}
+#bt1{
+    text-decoration: none;
+    border: transparent;
+    background-color: white;
+    border-radius: 5px;
 }

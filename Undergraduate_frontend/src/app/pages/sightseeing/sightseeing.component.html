@@ -4,12 +4,11 @@
         <div class="row">
             <div class="col-3 d-flex justify-content-center" *ngFor="let sightseeing of sightseeings">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ sightseeing.Name }}</h5>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" [attr.data-bs-target]="'#mdl' + sightseeing.Id">
-                            More..
+                        <button id="bt1" type="button" data-bs-toggle="modal" [attr.data-bs-target]="'#mdl' + sightseeing.Id">
+                          <img src="..." class="card-img-top" alt="...">
+                          <div class="card-body">
+                              <h5 class="card-title">{{ sightseeing.Name }}</h5>
+                              </div>
                           </button>
                           <!-- Modal -->
                           <div class="modal fade" [id]="'mdl'+sightseeing.Id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -20,7 +19,10 @@
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                  {{ sightseeing.Description }}
+                                  {{ sightseeing.Description }}<br><br>
+                                  <small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> {{sightseeing.Location}}</small>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -32,5 +34,4 @@
                 </div>
             </div>
         </div>
-    </div> 
     </body>
