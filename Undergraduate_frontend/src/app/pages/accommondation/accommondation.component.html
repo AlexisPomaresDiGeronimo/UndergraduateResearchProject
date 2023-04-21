@@ -5,7 +5,7 @@
             <div class="col-3 d-flex justify-content-center" *ngFor="let accommondation of accommondations">
                 <div class="card" style="width: 18rem;">
                         <button id="bt1" type="button" data-bs-toggle="modal" [attr.data-bs-target]="'#mdl' + accommondation.Id">
-                          <img [src]="" alt="Aliveri" >
+                          <img [src]="accommondation.Photo" style="width: 250px; height:180px;" alt="Aliveri" >
                           <div class="card-body">
                             <h5 class="card-title">{{ accommondation.Title }}</h5>
                             <p class="card-text">{{ accommondation.Type }}</p>

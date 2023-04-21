@@ -8,7 +8,8 @@ interface Transportation{
   Type        : string ,
   Description : string ,
   Location    : string ,
-  Phone       : string 
+  Phone       : string ,
+  Photo       : string
 }
 @Component({
   selector: 'app-transportation',

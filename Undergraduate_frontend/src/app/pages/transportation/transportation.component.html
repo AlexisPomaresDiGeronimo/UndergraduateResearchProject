@@ -5,7 +5,7 @@
             <div class="col-3 d-flex justify-content-center" *ngFor="let transportation of transportations">
                 <div class="card" style="width: 18rem;">
                         <button id="bt1" type="button" data-bs-toggle="modal" [attr.data-bs-target]="'#mdl' + transportation.Id">
-                          <img src="..." class="card-img-top" alt="...">
+                          <img [src]="transportation.Photo" style="width: 250px; height:180px;" class="card-img-top" alt="...">
                           <div class="card-body">
                               <h5 class="card-title">{{ transportation.Name }}</h5>
                               <p class="card-text">{{transportation.Type}}</p>

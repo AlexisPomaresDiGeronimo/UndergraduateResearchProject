@@ -7,6 +7,7 @@ interface Sightseeing{
    Name        : string,
    Description : string,
    Location    : string
+   Photo       : string
 }
 @Component({
   selector: 'app-sightseeing',

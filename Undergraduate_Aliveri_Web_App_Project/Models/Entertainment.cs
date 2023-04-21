@@ -14,6 +14,7 @@ namespace Undergraduate_Aliveri_Web_App_Project.Models
         public string Location { get; set; }
         public string Phone { get; set; }
         public bool Opened { get; set; }
+        public string Photo { get; set; }
         //public List<T> WorkHours { get; set; }
         //public List<T> Prices { get; set; }
 

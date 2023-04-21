@@ -11,5 +11,6 @@ namespace Undergraduate_Aliveri_Web_App_Project.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public string Location { get; set; }
+        public string Photo { get; set; }
     }
 }

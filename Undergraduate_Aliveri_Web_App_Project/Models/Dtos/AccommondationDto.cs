@@ -16,6 +16,7 @@ namespace Undergraduate_Aliveri_Web_App_Project.Models.Dtos
             Location = accommondation.Location;
             Phone = accommondation.Phone;
             Opened = accommondation.Opened;
+            Photo = accommondation.Photo;
         }
         public int Id { get; set; }
         public string Title { get; set; }
@@ -24,5 +25,6 @@ namespace Undergraduate_Aliveri_Web_App_Project.Models.Dtos
         public string Location { get; set; }
         public string Phone { get; set; }
         public bool Opened { get; set; }
+        public string Photo { get; set; }
     }
 }

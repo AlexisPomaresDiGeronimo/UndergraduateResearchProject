@@ -9,7 +9,8 @@ interface Accommondation {
   Description : string ,
   Location : string , 
   Phone :  string ,
-  Opened : boolean 
+  Opened : boolean ,
+  Photo       : string
 }
 
 @Component({

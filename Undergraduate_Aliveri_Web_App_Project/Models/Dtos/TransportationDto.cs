@@ -15,6 +15,7 @@ namespace Undergraduate_Aliveri_Web_App_Project.Models.Dtos
             Description = transportation.Description;
             Location = transportation.Location;
             Phone = transportation.Phone;
+            Photo = transportation.Photo;
         }
         public int Id { get; set; }
         public string Name { get; set; }
@@ -22,5 +23,6 @@ namespace Undergraduate_Aliveri_Web_App_Project.Models.Dtos
         public string Description { get; set; }
         public string Location { get; set; }
         public string Phone { get; set; }
+        public string Photo { get; set; }
     }
 }
