@@ -7,7 +7,7 @@ using Undergraduate_Aliveri_Web_App_Project.Models;
 
 namespace Undergraduate_Aliveri_Web_App_Project.Core.Repositories
 {
-    internal interface IAccommondationRepo : IGenericRepository<Accommondation>
+    internal interface IAccommodationRepo : IGenericRepository<Accommodation>
     {
     }
 }

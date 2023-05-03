@@ -7,9 +7,9 @@ using Undergraduate_Aliveri_Web_App_Project.Models;
 
 namespace Undergraduate_Aliveri_Web_App_Project.Persistance.Repositories
 {
-    public class AccommondationRepo : GenericRepository<Accommondation>, IAccommondationRepo
+    public class AccommodationRepo : GenericRepository<Accommodation>, IAccommodationRepo
     {
-        public AccommondationRepo(ApplicationDbContext dbContext) : base(dbContext)
+        public AccommodationRepo(ApplicationDbContext dbContext) : base(dbContext)
     {
     }
 }

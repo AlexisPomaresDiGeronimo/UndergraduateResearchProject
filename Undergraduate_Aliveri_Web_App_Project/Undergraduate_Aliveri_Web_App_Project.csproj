@@ -239,7 +239,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AccommondationController.cs" />
+    <Compile Include="Controllers\AccommodationController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\EntertainmentController.cs" />
@@ -251,7 +251,7 @@
     <Compile Include="Controllers\TransportationController.cs" />
     <Compile Include="Core\IGenericRepository.cs" />
     <Compile Include="Core\IUnitOfWork.cs" />
-    <Compile Include="Core\Repositories\IAccommondationRepo.cs" />
+    <Compile Include="Core\Repositories\IAccommodationRepo.cs" />
     <Compile Include="Core\Repositories\IContactRepo.cs" />
     <Compile Include="Core\Repositories\IEntertainmentRepo.cs" />
     <Compile Include="Core\Repositories\IPhotoRepo.cs" />
@@ -262,7 +262,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Accommondation.cs" />
+    <Compile Include="Models\Accommodation.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Dtos\AccommondationDto.cs" />
@@ -280,7 +280,7 @@
     <Compile Include="Models\Sightseeing.cs" />
     <Compile Include="Models\Transportation.cs" />
     <Compile Include="Persistance\GenericRepository.cs" />
-    <Compile Include="Persistance\Repositories\AccommondationRepo.cs" />
+    <Compile Include="Persistance\Repositories\AccommodationRepo.cs" />
     <Compile Include="Persistance\Repositories\ContactRepo.cs" />
     <Compile Include="Persistance\Repositories\EntertainmentRepo.cs" />
     <Compile Include="Persistance\Repositories\PhotoRepo.cs" />

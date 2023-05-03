@@ -16,7 +16,7 @@ namespace Undergraduate_Aliveri_Web_App_Project.Persistance
         public UnitOfWork(ApplicationDbContext dbContext)
         {
             this.context = dbContext;
-            Accommondation = new AccommondationRepo(context);
+            Accommodation = new AccommodationRepo(context);
             Contact = new ContactRepo(context);
             Entertainment = new EntertainmentRepo(context);
             Photo = new PhotoRepo(context);
@@ -25,7 +25,7 @@ namespace Undergraduate_Aliveri_Web_App_Project.Persistance
             Transportation = new TransportationRepo(context);
         }
 
-        public IAccommondationRepo Accommondation { get; }
+        public IAccommodationRepo Accommodation { get; }
 
         public IContactRepo Contact { get; }
 

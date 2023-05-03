@@ -5,18 +5,18 @@ using System.Web;
 
 namespace Undergraduate_Aliveri_Web_App_Project.Models.Dtos
 {
-    public class AccommondationDto
+    public class AccommodationDto
     {
-        public AccommondationDto(Accommondation accommondation)
+        public AccommodationDto(Accommodation Accommodation)
         {
-            Id = accommondation.Id;
-            Title = accommondation.Title;
-            Type = accommondation.Type;
-            Description = accommondation.Description;
-            Location = accommondation.Location;
-            Phone = accommondation.Phone;
-            Opened = accommondation.Opened;
-            Photo = accommondation.Photo;
+            Id = Accommodation.Id;
+            Title = Accommodation.Title;
+            Type = Accommodation.Type;
+            Description = Accommodation.Description;
+            Location = Accommodation.Location;
+            Phone = Accommodation.Phone;
+            Opened = Accommodation.Opened;
+            Photo = Accommodation.Photo;
         }
         public int Id { get; set; }
         public string Title { get; set; }

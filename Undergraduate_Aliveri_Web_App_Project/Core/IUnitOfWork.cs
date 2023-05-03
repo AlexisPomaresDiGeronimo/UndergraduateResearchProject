@@ -9,7 +9,7 @@ namespace Undergraduate_Aliveri_Web_App_Project.Core
 {
     internal interface IUnitOfWork : IDisposable
     {
-        IAccommondationRepo Accommondation { get; }
+        IAccommodationRepo Accommodation { get; }
         IContactRepo Contact { get; }
         IEntertainmentRepo Entertainment { get; }
         IPhotoRepo Photo { get; }

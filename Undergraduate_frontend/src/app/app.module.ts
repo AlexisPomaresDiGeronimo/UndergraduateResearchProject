@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './sharepages/navbar/navbar.component';
 import { FooterComponent } from './sharepages/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { AccommondationComponent } from './pages/accommondation/accommondation.component';
+import { accommodationComponent } from './pages/accommodation/accommodation.component';
 import { EntertainmentComponent } from './pages/entertainment/entertainment.component';
 import { SightseeingComponent } from './pages/sightseeing/sightseeing.component';
 import { TransportationComponent } from './pages/transportation/transportation.component';
@@ -22,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    AccommondationComponent,
+    accommodationComponent,
     EntertainmentComponent,
     SightseeingComponent,
     TransportationComponent,

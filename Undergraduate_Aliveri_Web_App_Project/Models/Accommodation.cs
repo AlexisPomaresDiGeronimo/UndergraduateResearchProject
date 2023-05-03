@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Undergraduate_Aliveri_Web_App_Project.Models
 {
-    public class Accommondation
+    public class Accommodation
     {
         public int Id { get; set; }
         public string Title { get; set; }

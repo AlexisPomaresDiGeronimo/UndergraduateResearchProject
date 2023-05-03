@@ -24,7 +24,7 @@ namespace Undergraduate_Aliveri_Web_App_Project.Models
             : base("AliveriWebAppConnection")
         {
         }
-        public DbSet<Accommondation> Accomondations { get; set; }
+        public DbSet<Accommodation> Accomondations { get; set; }
         public DbSet<Contact> ContactUs { get; set; }
         public DbSet<Entertainment> Entertainments { get; set; }
         public DbSet<Photo> Photos { get; set; }

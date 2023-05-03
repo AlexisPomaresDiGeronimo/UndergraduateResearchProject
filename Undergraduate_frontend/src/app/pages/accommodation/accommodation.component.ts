@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ApiUrlService } from 'src/app/services/apiservice.service';
 
-interface Accommondation {
+interface accommodation {
   Id : number,
   Title : string ,
   Type  : string ,
@@ -14,18 +14,18 @@ interface Accommondation {
 }
 
 @Component({
-  selector: 'app-accommondation',
-  templateUrl: './accommondation.component.html',
-  styleUrls: ['./accommondation.component.css']
+  selector: 'app-accommodation',
+  templateUrl: './accommodation.component.html',
+  styleUrls: ['./accommodation.component.css']
 })
-export class AccommondationComponent {
-  accommondations : Accommondation[] | undefined;
+export class accommodationComponent {
+  accommodations : accommodation[] | undefined;
 constructor(private http: HttpClient, private apiUrlService : ApiUrlService) {}
 ngOnInit() : void{
-  this.http.get(this.apiUrlService.getUrl() +'Accommondation').subscribe(
+  this.http.get(this.apiUrlService.getUrl() +'accommodation').subscribe(
     (data : any) => {
-      this.accommondations = data
-      console.log(this.accommondations)
+      this.accommodations = data
+      console.log(this.accommodations)
     }
   )
 };
